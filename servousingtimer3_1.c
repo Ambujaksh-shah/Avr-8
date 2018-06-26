@@ -28,35 +28,24 @@ _delay_ms(500);
 for (i=0;i<=20;i++)
  {
   PORTB|=(1<<0);
- // T0Delay();
-  _delay_us(1500);
+  T0Delay();
+ // _delay_us(1500);
   PORTB&=~(1<<0);
-// T4Delay();
- _delay_us(18500);
+ T4Delay();
+// _delay_us(18500);
    
  }
  _delay_ms(800);
 
-/*for (k=0;k<=20;k++)
- {
-  PORTB|=(1<<0);
- T2Delay();
- // _delay_us(2250);
-  PORTB&=~(1<<0);
-T6Delay();
-// _delay_us(17750);
-   
- }
- _delay_ms(800);
-*/  
+
 for (j=0;j<=50;j++)
  {
   PORTB|=(1<<0);
-  //T1Delay();
-  _delay_us(8);
+  T1Delay();
+  //_delay_us(8);
   PORTB&=~(1<<0);
-// T5Delay();
- _delay_us(19992);
+  T5Delay();
+ //_delay_us(19992);
    
  }
  _delay_ms(800);
